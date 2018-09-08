@@ -1,0 +1,49 @@
+
+{
+	"meta":{
+		"count": 0,
+		"links":{
+			"self": "https://mock-travel-apis.herokuapp.com/taxis"
+		}
+	},
+	"data":[
+		{
+			"state": "free",
+			"name": "Hyundai",
+			"location": {
+				"lon": 3.703,
+				"lat": 40.41
+			},
+			"city": "Madrid"	
+		},
+		{
+			"state": "free",
+			"name": "Fiat",
+			"location": {
+				"lon": 2.1734,
+				"lat": 41.38
+			},
+			"city": "Barcelona"	
+		},
+		{
+			"state": "free",
+			"name": "Peugeot",
+			"location": {
+				"lon": 2.3522,
+				"lat": 48.86
+			},
+			"city": "Paris"	
+		},
+		{
+			"state": "hired",
+			"name": "Renault",
+			"location": {
+				"lon": 0.1278,
+				"lat": 51.5074
+			},
+			"city": "London"	
+		}
+
+	]
+}  
+
