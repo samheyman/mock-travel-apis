@@ -18,8 +18,8 @@ These instructions will get you a copy of the project up and running on your loc
 What you will need:
 
 * python 3.6
-* virtualenv
 * pip
+* pipenv
 
 ### Installing
 
@@ -27,15 +27,17 @@ To run it locally:
 
 * install the requirements
 ```
-pip install -r requirements.txt
+pipenv install
 ```
 * run the server
 ```
-python server.py
+pipenv run python server.py
 ```
 * you can access the API here:
 ```
 localhost:8080/taxis
+localhost:8080/taxis/madrid
+localhost:8080/taxis/madrid/hyundai
 ```
 
 

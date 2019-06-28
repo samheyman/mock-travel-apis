@@ -9,39 +9,39 @@
 	"data":[
 		{
 			"state": "free",
-			"name": "Hyundai",
+			"name": "hyundai",
 			"location": {
 				"lon": 3.703,
 				"lat": 40.41
 			},
-			"city": "Madrid"	
+			"city": "madrid"	
 		},
 		{
 			"state": "free",
-			"name": "Fiat",
+			"name": "fiat",
 			"location": {
 				"lon": 2.1734,
 				"lat": 41.38
 			},
-			"city": "Barcelona"	
+			"city": "barcelona"	
 		},
 		{
 			"state": "free",
-			"name": "Peugeot",
+			"name": "peugeot",
 			"location": {
 				"lon": 2.3522,
 				"lat": 48.86
 			},
-			"city": "Paris"	
+			"city": "paris"	
 		},
 		{
 			"state": "hired",
-			"name": "Renault",
+			"name": "renault",
 			"location": {
 				"lon": 0.1278,
 				"lat": 51.5074
 			},
-			"city": "London"	
+			"city": "london"	
 		}
 
 	]
