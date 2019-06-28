@@ -5,6 +5,7 @@ Mock travel APIs to use to stub out the real APIs.
 ## Demo
 
 ### Taxis
+
 * [GET /taxis](https://mock-travel-apis.herokuapp.com/taxis) - a list of all taxis
 ```shell
 {
@@ -92,6 +93,29 @@ Mock travel APIs to use to stub out the real APIs.
     ]
 }
 ```
+* [POST /taxis/\<city\>/\<taxi_id\>]() - book a given taxi
+```shell
+{
+	"meta":{
+		"count": 1,
+		"links":{
+			"self": "https://mock-travel-apis.herokuapp.com/taxis"
+		}
+	},
+	"data":[
+		{
+			"state": "hired",
+			"name": "hyundai",
+			"location": {
+				"lon": 3.703,
+				"lat": 40.41
+			},
+			"city": "madrid"	
+		},
+        ...
+    ]
+}
+```
 
 ## Usage
 
@@ -117,11 +141,13 @@ pipenv install
 ```
 pipenv run python server.py
 ```
-* you can access the API here:
+* you can call the API with the following requests:
 ```
-localhost:8080/taxis
-localhost:8080/taxis/madrid
-localhost:8080/taxis/madrid/hyundai
+GET localhost:8080/taxis
+GET localhost:8080/taxis/madrid
+GET localhost:8080/taxis/madrid/hyundai
+POST localhost:8080/taxis/madrid/hyundai
+
 ```
 
 
