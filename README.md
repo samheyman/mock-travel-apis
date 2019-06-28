@@ -6,8 +6,92 @@ Mock travel APIs to use to stub out the real APIs.
 
 ### Taxis
 * [GET /taxis](https://mock-travel-apis.herokuapp.com/taxis) - a list of all taxis
+```shell
+{
+	"meta":{
+		"count": 2,
+		"links":{
+			"self": "https://mock-travel-apis.herokuapp.com/taxis"
+		}
+	},
+	"data":[
+		{
+			"state": "free",
+			"name": "hyundai",
+			"location": {
+				"lon": 3.703,
+				"lat": 40.41
+			},
+			"city": "madrid"	
+		},
+		{
+			"state": "free",
+			"name": "fiat",
+			"location": {
+				"lon": 2.1734,
+				"lat": 41.38
+			},
+			"city": "barcelona"	
+		},
+        ...
+    ]
+}
+```
 * [GET /taxis/\<city\>]() - a list of all taxis in a city
+```shell
+{
+	"meta":{
+		"count": 2,
+		"links":{
+			"self": "https://mock-travel-apis.herokuapp.com/taxis"
+		}
+	},
+	"data":[
+		{
+			"state": "free",
+			"name": "hyundai",
+			"location": {
+				"lon": 3.703,
+				"lat": 40.41
+			},
+			"city": "madrid"	
+		},
+		{
+			"state": "free",
+			"name": "fiat",
+			"location": {
+				"lon": 3.732,
+				"lat": 40.51
+			},
+			"city": "madrid"	
+		},
+        ...
+    ]
+}
+```
 * [GET /taxis/\<city\>/\<taxi_id\>]() - details for a given taxi
+```shell
+{
+	"meta":{
+		"count": 1,
+		"links":{
+			"self": "https://mock-travel-apis.herokuapp.com/taxis"
+		}
+	},
+	"data":[
+		{
+			"state": "free",
+			"name": "hyundai",
+			"location": {
+				"lon": 3.703,
+				"lat": 40.41
+			},
+			"city": "madrid"	
+		},
+        ...
+    ]
+}
+```
 
 ## Usage
 
