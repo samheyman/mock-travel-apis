@@ -14,9 +14,9 @@ def get_taxis():
 def get_taxis_city(city):
     return taxis.get(city=city)
 
-@get('/taxis/<city>/<id>')
-def get_taxi_city(city, id):
-    return taxis.get(city=city, id=id)
+@get('/taxis/<city>/<taxi_id>')
+def get_taxi_city(city, taxi_id):
+    return taxis.get(city=city, taxi_id=taxi_id)
 
 
 if __name__ == "__main__":
