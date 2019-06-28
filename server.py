@@ -18,6 +18,10 @@ def get_taxis_city(city):
 def get_taxi_city(city, taxi_id):
     return taxis.get(city=city, taxi_id=taxi_id)
 
+@post('/taxis/<city>/<taxi_id>')
+def get_taxi_city(city, taxi_id):
+    return taxis.post(city=city, taxi_id=taxi_id)
+
 
 if __name__ == "__main__":
     if os.environ.get('APP_LOCATION') == 'heroku':
