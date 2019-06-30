@@ -9,7 +9,6 @@ from taxis import taxis
 def get_taxis():
     return taxis.get()
 
-
 @get('/taxis/<city>')
 def get_taxis_city(city):
     return taxis.get(city=city)
@@ -18,9 +17,9 @@ def get_taxis_city(city):
 def get_taxi_city(city, taxi_id):
     return taxis.get(city=city, taxi_id=taxi_id)
 
-@post('/taxis/<city>/<taxi_id>')
-def get_taxi_city(city, taxi_id):
-    return taxis.post(city=city, taxi_id=taxi_id)
+@post('/taxis/<city>/<taxi_name>')
+def get_taxi_city(city, taxi_name):
+    return taxis.post(city=city, taxi_name=taxi_name)
 
 
 if __name__ == "__main__":
