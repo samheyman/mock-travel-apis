@@ -1,6 +1,6 @@
 # Mock Travel APIs
 
-Mock travel APIs to use to stub out the real APIs.
+Mock travel APIs to use to stub out the real APIs. Used for example in the [Taxi Slack Bot app](https://github.com/samheyman/slack-bot).
 
 ## Demo
 
