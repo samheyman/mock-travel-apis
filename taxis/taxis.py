@@ -6,6 +6,7 @@ def get(city=None, taxi_id=None):
     if city and taxi_id:
         filedata = utils.load_json_file('taxis.json')["data"]
         results = [taxi for taxi in filedata if (taxi['city'] == city and taxi['name'] == taxi_id)]
+        print(results)
         number_results = len(results)
         response = {
             "meta": {
